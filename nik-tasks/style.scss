@@ -1,0 +1,91 @@
+$color-black: #1b1b1b;
+$color-black-text: #000;
+$color-white: #fff;
+$color-block: #888;
+$color-block-active: #ccc;
+
+body {
+	background-color: $color-black;
+}
+
+h1 {
+	color: $color-white;
+}
+
+// accordion
+.accordionExample {
+	.accBtn {
+		background-color: $color-block;
+		color: $color-white;
+		padding: 18px;
+		width: 100%;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+
+		&:hover {
+			background-color: $color-block-active;
+			color: $color-black-text;
+		}
+	}
+
+	.acc-content {
+		padding: 0 18px;
+		background-color: $color-white;
+		overflow: hidden;
+		display: none;
+	}
+
+	.active {
+		background-color: $color-white  !important;
+		color: $color-black-text;
+	}
+}
+
+// tabs
+.tabsExample {
+	background-color: $color-block;
+	border-radius: 5px;
+
+	.tabButtons {
+		padding: 0;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.tabLink {
+		padding: 0;
+		width: 100%;
+		height: 50px;
+		background-color: $color-block;
+		border: none;
+		outline: none;
+		color: $color-white;
+		transition: 0.4s;
+
+		&:first-child {
+			border-radius: 5px 0 0 0;
+		}
+
+		&:last-child {
+			border-radius: 0 5px 0 0;
+		}
+
+		&:hover {
+			background: $color-block-active;
+			color: $color-black-text;
+		}
+	}
+
+	.tabContent {
+		border-radius: 0 0 5px 5px;
+		display: none;
+	}
+
+	.active {
+		background-color: $color-white  !important;
+		color: $color-black-text;
+		display: block;
+	}
+}

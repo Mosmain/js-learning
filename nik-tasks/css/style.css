@@ -1,0 +1,71 @@
+body {
+  background-color: #1b1b1b;
+}
+
+h1 {
+  color: #fff;
+}
+
+.accordionExample .accBtn {
+  background-color: #888;
+  color: #fff;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordionExample .accBtn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.accordionExample .acc-content {
+  padding: 0 18px;
+  background-color: #fff;
+  overflow: hidden;
+  display: none;
+}
+.accordionExample .active {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.tabsExample {
+  background-color: #888;
+  border-radius: 5px;
+}
+.tabsExample .tabButtons {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tabsExample .tabLink {
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #888;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: 0.4s;
+}
+.tabsExample .tabLink:first-child {
+  border-radius: 5px 0 0 0;
+}
+.tabsExample .tabLink:last-child {
+  border-radius: 0 5px 0 0;
+}
+.tabsExample .tabLink:hover {
+  background: #ccc;
+  color: #000;
+}
+.tabsExample .tabContent {
+  border-radius: 0 0 5px 5px;
+  display: none;
+}
+.tabsExample .active {
+  background-color: #fff !important;
+  color: #000;
+  display: block;
+}/*# sourceMappingURL=style.css.map */
